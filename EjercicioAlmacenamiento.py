@@ -2,7 +2,7 @@ from Google import Create_Service
 from googleapiclient.http import MediaFileUpload
 import requests
 
-
+#Obteniendo respuesta
 resp = requests.get('http://www.randomnumberapi.com/api/v1.0/random?min=100&max=1000&count=1').json()
 
 print(resp)
@@ -14,6 +14,7 @@ for i in range(len(resp)):
 
 print(numero)
 
+#Creando archivo
 f = open(numero, "w")
 f.write("1060420")
 f.close()
